@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sorting Hat</title>
+    <title>Sorting-Hat</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
-        <p class="lead">Alohomora totalus arania veritaserum legilimens. Charm felix aresto alohomora incantato mortis serpensortia homorphus. Serpensortia totalus aparecium expecto elixir totalus lacarnum waddiwasi incantartem vow.</p>
-        <hr class="my-4">
-        <p>Aresto locomotor quietus stupefy.</p>
-        <p class="lead">
-          <a id="begin" class="btn btn-primary btn-lg" href="#" role="button">Let's start sorting!</a>
-        </p>
-    </div>
-    <div id="form"></div>
-    <div id="card"></div>
-      
+    <header class="d-block">
+        <div class="jumbotron col-lg-8 col-md-10 ml-auto mr-auto">
+            <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
+            <p class="lead">My job is to randomly place you into a house!</p>
+            <hr class="my-4">
+            <p>Which house will you find yourself in???</p>
+            <p class="lead">
+              <a id="start-sorting" class="btn btn-primary btn-lg" href="#" role="button">Start Sorting!</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div id="sorting-form" class="col-lg-8 col-md-10 ml-auto mr-auto"></div>
+        <div class="position-card-container col-lg-8 col-md-10 ml-auto mr-auto">
+            <div id="student-cards-container" class="d-flex flex-wrap justify-content-between mt-4"></div>
+        </div>
+    </main>
+    
     <script src="./main.js"></script>
 </body>
 </html>
